@@ -5,7 +5,6 @@ import Footer from "../footer";
 import filters from "../filters.json";
 import FilterDropdown from "./filter-dropdown";
 import FileView from "./file-view";
-import Link from "next/link";
 import Image from "next/image";
 import { projects } from "../projects-data";
 import { TransitionLink } from "../transition-link";

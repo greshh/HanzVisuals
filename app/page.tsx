@@ -1,6 +1,6 @@
 "use client"
 import { useState, useEffect } from "react";
-import Link from "next/link";
+import { TransitionLink } from "./transition-link";
 import Footer from "./footer";
 import Carousel from "./carousel";
 import emailjs from "@emailjs/browser";
@@ -61,37 +61,37 @@ export default function Home() {
         <div className="absolute top-0 flex flex-col mt-[10vh] px-[20vw] py-5 justify-center items-center w-full h-[90vh] md:h-[90vh]">
           <img src="/logo-hanzvisuals-transparent.png" alt="Hanz Visuals logo" id="logo" className="w-auto mx-auto z-30"/>
         </div>
-        <Link href="/#showcase" className="hidden md:absolute bottom-6 md:flex md:flex-col w-full justify-center gap-1 transition-opacity duration-200 z-30 animate-float" style={{ opacity: scrollY <= 0 ? 1 : 0 }}>
+        <TransitionLink href="/#showcase" className="hidden md:absolute bottom-6 md:flex md:flex-col w-full justify-center gap-1 transition-opacity duration-200 z-30 animate-float" style={{ opacity: scrollY <= 0 ? 1 : 0 }}>
           <p className="text-white text-center font-anonymouspro">scroll down</p>
           <img src="/home/arrow.svg" alt="arrow down" className="mx-auto"/>
-        </Link>
+        </TransitionLink>
       </div>
       <div id="showcase" className="relative">
         <div className="absolute top-0 left-0 w-full h-24 md:h-32 bg-gradient-to-b from-neutral-400 to-white"/>
       </div>
       <div className="px-12 md:px-52">
         <div className="mt-24 md:mt-32 mx-30 flex justify-center flex-wrap gap-6">
-          <Link href="/projects?filters=photos#filter" className="group relative h-32 md:h-96 w-full md:w-80">
+          <TransitionLink href="/projects?filters=photos#filter" className="group relative h-32 md:h-96 w-full md:w-80">
             <div className="absolute h-32 md:h-96 w-full flex items-center justify-center z-20">
               <p className="text-white font-phonk text-2xl md:text-4xl tracking-wide" style={{ textShadow: "0px 2px 20px #000000" }}>PHOTOS</p>
             </div>
             <div className="absolute opacity-0 group-hover:opacity-100 transition-opacity duration-500 h-32 md:h-96 w-full bg-[#00000070] z-10"/>
             <div className="absolute h-32 md:h-96 inset-0 bg-[url(/home/photo-video-graphic/Photos.jpg)] bg-[length:115%] bg-center"/>
-          </Link>
-          <Link href="/projects?filters=videos#filter" className="group relative h-32 md:h-96 w-80">
+          </TransitionLink>
+          <TransitionLink href="/projects?filters=videos#filter" className="group relative h-32 md:h-96 w-80">
             <div className="absolute h-32 md:h-96 w-full flex items-center justify-center z-20">
               <p className="text-white font-phonk text-2xl md:text-4xl tracking-wide" style={{ textShadow: "0px 2px 20px #000000" }}>VIDEOS</p>
             </div>
             <div className="absolute opacity-0 group-hover:opacity-100 transition-opacity duration-500 h-32 md:h-96 w-full bg-[#00000070] z-10"/>
             <div className="absolute h-32 md:h-96 inset-0 bg-[url(/home/photo-video-graphic/Videos.jpg)] bg-[length:115%] bg-center"/>
-          </Link>
-          <Link href="/projects?filters=graphics#filter" className="group relative h-32 md:h-96 w-80">
+          </TransitionLink>
+          <TransitionLink href="/projects?filters=graphics#filter" className="group relative h-32 md:h-96 w-80">
             <div className="absolute h-32 md:h-96 w-full flex items-center justify-center z-20">
               <p className="text-white font-phonk text-2xl md:text-4xl tracking-wide" style={{ textShadow: "0px 2px 20px #000000" }}>GRAPHICS</p>
             </div>
             <div className="absolute opacity-0 group-hover:opacity-100 transition-opacity duration-500 h-32 md:h-96 w-full bg-[#00000070] z-10"/>
             <div className="absolute h-32 md:h-96 inset-0 bg-[url(/home/photo-video-graphic/Graphics.jpg)] bg-[length:115%] bg-center"/>
-          </Link>
+          </TransitionLink>
         </div>
         <hr className="border-neutral-800 my-16 md:my-24"/>
         <div className="mb-16 md:mb-36">
@@ -101,14 +101,14 @@ export default function Home() {
         </div>
       </div>
       <div className="bg-black w-full aspect-[2/1] md:aspect-[4/1] my-10 md:my-20 relative">
-        <Link href="/projects" className="group text-center text-white flex flex-col items-center justify-center h-full"> 
+        <TransitionLink href="/projects" className="group text-center text-white flex flex-col items-center justify-center h-full"> 
           <video src="/home/projects-sequence.mp4" autoPlay loop muted className="absolute w-full h-full object-cover"/>
           <div className="absolute z-10 w-full h-full backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500"/>
           <div className="absolute z-20 w-full h-full flex flex-col items-center justify-center">
               <h2 className="font-humane text-[30vw] md:text-[20vw] tracking-wider font-semibold leading-none" style={{ textShadow: "0px 5px 10px #000000" }}>PROJECTS</h2>
               <p className="italic text-2xl leading-none -mt-3 md:-mt-8 font-anonymouspro" style={{ textShadow: "0px 2px 8px #000000" }}>click here</p>
           </div>
-        </Link>
+        </TransitionLink>
       </div>
       <div className="bg-gradient-to-b from-white to-neutral-950 h-20 md:h-40"/>
       <div className="text-center bg-neutral-950 text-white py-16 md:py-52 relative h-fit w-full font-anonymouspro flex flex-col items-center justify-center md:justify-normal gap-2 flex-wrap">
