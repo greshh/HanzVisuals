@@ -3,15 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
+  --background: #0a0a0a;
   --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
@@ -25,6 +18,16 @@ img {
   image-rendering: auto;
   image-rendering: -webkit-optimize-contrast;
   /* image-rendering: crisp-edges; */
+}
+
+#page-content {
+  transition-property: opacity;
+  transition-timing-function: ease-in-out;
+  transition-duration: 300ms;
+}
+
+.page-transition {
+  opacity: 0;
 }
 
 /* PHONK font */

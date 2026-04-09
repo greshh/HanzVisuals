@@ -8,6 +8,7 @@ import FileView from "./file-view";
 import Link from "next/link";
 import Image from "next/image";
 import { projects } from "../projects-data";
+import { TransitionLink } from "../transition-link";
 
 interface Filter {
   name: string;
@@ -139,7 +140,7 @@ export default function ProjectsClient() {
 
                 return (
                   p.link?.includes("projects") ? (
-                    <Link href={p.link} className="block w-full md:w-60" key={p.name}>
+                    <TransitionLink href={p.link} className="block w-full md:w-60" key={p.name}>
                       <div 
                         className="relative group flex flex-col items-end justify-end text-right h-full md:h-80 object-cover transition-shadow duration-300 hover:shadow-[0_4px_10px_rgba(0,0,0,0.5)]"
                         key={p.name}
@@ -176,7 +177,7 @@ export default function ProjectsClient() {
                           <p className="text-black text-base font-semibold">{startDate && <span>{startDate}</span>}{p.endDate && <span> - {endDate}</span>}</p>
                         </div>
                       </div>
-                    </Link>
+                    </TransitionLink>
                   ) : (
                     p.link ? (
                       <a

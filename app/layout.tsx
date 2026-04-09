@@ -1,6 +1,4 @@
 import type { Metadata } from "next";
-import TransitionProvider from "./transition-provider";
-import emailjs from "@emailjs/browser";
 import { Analytics } from "@vercel/analytics/next"
 import Script from "next/script";
 import Navbar from "./navbar";
@@ -43,9 +41,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body>
         <Navbar/>
-        <TransitionProvider>
+        <div id="page-content">
           {children}
-        </TransitionProvider>
+        </div>
       </body>
     </html>
   );
