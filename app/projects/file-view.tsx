@@ -16,16 +16,16 @@ export default function FileView({ name, type, setCurrentFile }: { name: string;
         className="bg-[#1c1c1c80] w-full h-full flex justify-center items-center cursor-pointer"
         onClick={()=>setCurrentFile("")}
       >
-        <div className="flex flex-row gap-2 p-10">
-          {type == "png" && <Image
-            src={`/projects/${name}`}
-            alt={name}
-            width={400}
-            height={400}
-            quality={100}
-            className={`${isLandscape ? "h-[90vh]" : "w-[90vw]"} object-contain cursor-default`}
-            onClick={(e) => e.stopPropagation()}
-          />}
+        <div className="flex flex-row gap-2 p-10 w-full h-full">
+          {type == "png" && <div className="relative w-[90vw] h-[90vh]">
+            <Image
+              src={`/projects/${name}`}
+              alt={name}
+              fill
+              quality={100}
+              className="object-contain"
+            />
+          </div>}
           {type == "mp4" && <video
             src={`/projects/${name}`}
             controls
@@ -33,11 +33,11 @@ export default function FileView({ name, type, setCurrentFile }: { name: string;
             width={400}
             height={400}
             className={`${isLandscape ? "h-[90vh]" : "w-[90vw]"} object-contain cursor-default`}
-            onClick={(e) => e.stopPropagation()}
+            // onClick={(e) => e.stopPropagation()}
           />}
           <img 
             src="/projects/close-file.svg" 
-            className="w-8 h-8 cursor-pointer" 
+            className="w-10 h-10 lg:w-8 lg:h-8 cursor-pointer" 
             alt="close file"
             onClick={()=>setCurrentFile("")}
           />

@@ -7,7 +7,6 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Hanz Visuals",
   description: "A visual portfolio",
-
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
