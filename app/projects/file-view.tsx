@@ -17,7 +17,7 @@ export default function FileView({ name, type, setCurrentFile }: { name: string;
         onClick={()=>setCurrentFile("")}
       >
         <div className="flex flex-row gap-2 p-10 w-full h-full">
-          {type == "png" && <div className="relative w-[90vw] h-[90vh]">
+          {(type == "png" || type == "jpg") && <div className="relative w-[90vw] h-[90vh]">
             <Image
               src={`/projects/${name}`}
               alt={name}

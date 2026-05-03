@@ -157,5 +157,19 @@ export const projects: Project[] = [
     "startDate": "2026-03-26",
     "tags": ["videos", "micdup", "volleyball"],
     "link": "https://drive.google.com/file/d/1frTGcR6pgS-arC_gGKgjvOLVsT1mdiEd/view?usp=sharing"
+  },
+  {
+    "name": "Senior Prems 2026 Graphics",
+    "key": "senior-prems-26-graphics",
+    "startDate": "2026-05-01",
+    "tags": ["graphics", "basketball"],
+    "file": "senior-prems-26-graphics.jpg"
+  },
+  {
+    "name": "Senior Prems 2026 Photos",
+    "key": "senior-prems-26",
+    "startDate": "2026-05-01",
+    "tags": ["photos", "basketball"],
+    "link": "/projects/senior-prems-26"
   }
 ]

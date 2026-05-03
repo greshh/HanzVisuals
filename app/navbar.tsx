@@ -37,7 +37,7 @@ export default function Navbar() {
         </TransitionLink>
         <div className="flex space-x-20 w-[20vw] md:w-fit">
           <TransitionLink href="/projects" className="hover:text-[#89ADD1] transition-hover duration-500">Projects</TransitionLink>
-          <TransitionLink href="/#contact" className="hidden lg:inline hover:text-[#89ADD1] transition-hover duration-500">Contact</TransitionLink>
+          <TransitionLink href="/#contact" className="hidden lg:inline hover:text-[#89ADD1] transition-hover duration-500">Booking</TransitionLink>
         </div>
       </div>
     </nav>
