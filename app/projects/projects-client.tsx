@@ -8,6 +8,7 @@ import FileView from "./file-view";
 import Image from "next/image";
 import { projects } from "../projects-data";
 import { TransitionLink } from "../transition-link";
+import ScrollDown from "../scroll-down";
 
 interface Filter {
   name: string;
@@ -85,12 +86,13 @@ export default function ProjectsClient() {
       <div className="bg-white w-full z-10">
         <div className="flex bg-gradient-to-b from-neutral-950 to-neutral-500 w-full h-60 md:h-[90vh] justify-center items-center">
           <h1 className="text-white font-humane text-9xl md:text-[200px] lg:text-[400px] font-semibold tracking-wider">{("Projects").toUpperCase()}</h1>
+          <ScrollDown url="/projects#filter"/>
         </div>
-        <div className="h-12 md:h-40 relative">
+        <div className="h-12 md:h-40 relative" id="filter">
           <div className="absolute top-0 left-0 w-full h-10 md:h-20 bg-gradient-to-b from-neutral-300 to-white"/>
         </div>
         <FilterDropdown selectedFilters={selectedFilters} router={router} filterOpen={filterOpen} setFilterOpen={setFilterOpen}/>
-        <div className="pl-10 md:pl-52 pr-10 md:pr-32 mb-20 min-h-[25rem]" id="filter">
+        <div className="pl-10 md:pl-52 pr-10 md:pr-32 mb-20 min-h-[25rem]">
           <div className="flex flex-row gap-4 mb-10">
             <img 
               src="/projects/filter.svg" 

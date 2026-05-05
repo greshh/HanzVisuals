@@ -4,9 +4,9 @@ import { TransitionLink } from "./transition-link";
 import Footer from "./footer";
 import Carousel from "./carousel";
 import emailjs from "@emailjs/browser";
+import ScrollDown from "./scroll-down";
 
 export default function Home() {
-  const [scrollY, setScrollY] = useState(0);
   const [emailStatus, setEmailStatus] = useState<"idle" | "success" | "error">("idle");
 
   const data = [{ image: "/home/carousel/1.jpg" },
@@ -46,14 +46,6 @@ export default function Home() {
     );
   };
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollY(window.scrollY);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
     <div id="home" className="bg-white scroll-m-24">
       <div className="h-[90vh] md:h-[90vh] w-full">
@@ -61,10 +53,7 @@ export default function Home() {
         <div className="absolute top-0 flex flex-col mt-[10vh] px-[20vw] py-5 justify-center items-center w-full h-[90vh] md:h-[90vh]">
           <img src="/logo-hanzvisuals-transparent.png" alt="Hanz Visuals logo" id="logo" className="w-auto mx-auto z-30"/>
         </div>
-        <TransitionLink href="/#showcase" className="hidden md:absolute bottom-6 md:flex md:flex-col w-full justify-center gap-1 transition-opacity duration-200 z-30 animate-float" style={{ opacity: scrollY <= 0 ? 1 : 0 }}>
-          <p className="text-white text-center font-anonymouspro">scroll down</p>
-          <img src="/home/arrow.svg" alt="arrow down" className="mx-auto"/>
-        </TransitionLink>
+        <ScrollDown url="/#showcase"/>
       </div>
       <div id="showcase" className="relative">
         <div className="absolute top-0 left-0 w-full h-24 md:h-32 bg-gradient-to-b from-neutral-400 to-white"/>
