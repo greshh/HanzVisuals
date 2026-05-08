@@ -109,8 +109,8 @@ export const projects: Project[] = [
     "link": "https://drive.google.com/file/d/18eMH_t4GXwZG-gkN6WiRaCOfzPgFwOWX/view?usp=drive_link"
   },
   {
-    "name": "Roller Blacks Camp",
-    "key": "roller-blacks-camp",
+    "name": "Roller Blacks Camp 1",
+    "key": "roller-blacks-camp-1",
     "startDate": "2026-03-22",
     "tags": ["photos", "basketball"],
     "link": "https://photos.app.goo.gl/32uqUpvrDBCBm93z9"
@@ -171,5 +171,12 @@ export const projects: Project[] = [
     "startDate": "2026-05-01",
     "tags": ["photos", "basketball"],
     "link": "/projects/senior-prems-26"
+  },
+  {
+    "name": "Roller Blacks Camp 2",
+    "key": "roller-blacks-camp-2",
+    "startDate": "2026-05-02",
+    "tags": ["photos", "basketball"],
+    "link": "https://photos.app.goo.gl/N6dNd1RHgbnY7G4n6"
   }
 ]

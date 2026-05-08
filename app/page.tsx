@@ -5,6 +5,7 @@ import Footer from "./footer";
 import Carousel from "./carousel";
 import emailjs from "@emailjs/browser";
 import ScrollDown from "./scroll-down";
+import BeholdWidget from "@behold/react"
 
 export default function Home() {
   const [emailStatus, setEmailStatus] = useState<"idle" | "success" | "error">("idle");
@@ -59,31 +60,7 @@ export default function Home() {
         <div className="absolute top-0 left-0 w-full h-24 md:h-32 bg-gradient-to-b from-neutral-400 to-white"/>
       </div>
       <div className="px-12 md:px-52">
-        <div className="mt-24 md:mt-32 mx-30 flex justify-center flex-wrap gap-6">
-          <TransitionLink href="/projects?filters=photos#filter" className="group relative h-32 md:h-96 w-full md:w-80">
-            <div className="absolute h-32 md:h-96 w-full flex items-center justify-center z-20">
-              <p className="text-white font-phonk text-2xl md:text-4xl tracking-wide" style={{ textShadow: "0px 2px 20px #000000" }}>PHOTOS</p>
-            </div>
-            <div className="absolute opacity-0 group-hover:opacity-100 transition-opacity duration-500 h-32 md:h-96 w-full bg-[#00000070] z-10"/>
-            <div className="absolute h-32 md:h-96 inset-0 bg-[url(/home/photo-video-graphic/Photos.jpg)] bg-[length:115%] bg-center"/>
-          </TransitionLink>
-          <TransitionLink href="/projects?filters=videos#filter" className="group relative h-32 md:h-96 w-80">
-            <div className="absolute h-32 md:h-96 w-full flex items-center justify-center z-20">
-              <p className="text-white font-phonk text-2xl md:text-4xl tracking-wide" style={{ textShadow: "0px 2px 20px #000000" }}>VIDEOS</p>
-            </div>
-            <div className="absolute opacity-0 group-hover:opacity-100 transition-opacity duration-500 h-32 md:h-96 w-full bg-[#00000070] z-10"/>
-            <div className="absolute h-32 md:h-96 inset-0 bg-[url(/home/photo-video-graphic/Videos.jpg)] bg-[length:115%] bg-center"/>
-          </TransitionLink>
-          <TransitionLink href="/projects?filters=graphics#filter" className="group relative h-32 md:h-96 w-80">
-            <div className="absolute h-32 md:h-96 w-full flex items-center justify-center z-20">
-              <p className="text-white font-phonk text-2xl md:text-4xl tracking-wide" style={{ textShadow: "0px 2px 20px #000000" }}>GRAPHICS</p>
-            </div>
-            <div className="absolute opacity-0 group-hover:opacity-100 transition-opacity duration-500 h-32 md:h-96 w-full bg-[#00000070] z-10"/>
-            <div className="absolute h-32 md:h-96 inset-0 bg-[url(/home/photo-video-graphic/Graphics.jpg)] bg-[length:115%] bg-center"/>
-          </TransitionLink>
-        </div>
-        <hr className="border-neutral-800 my-16 md:my-24"/>
-        <div className="mb-16 md:mb-36">
+        <div className="mt-32 md:mt-40 mb-16 md:mb-36">
           <h2 id="who-we-are" className="font-phonk text-3xl md:text-4xl mb-5 scroll-mt-60 text-black">{("Who we are").toUpperCase()}</h2>
           <p className="mb-6 text-md md:text-xl text-black md:leading-relaxed">Kia Ora! <span className="font-bold">Hanz Visuals</span> is run by two brothers, Hanz and Dhon, based in Auckland, New Zealand. We grew up with basketball, volleyball, and other sports, so we know firsthand the highs, the lows, and everything in between that comes with sports. We love capturing those moments: the small details that make the game what it is. Being creative at heart, we combine our love for the game with our passion to create, which is why we are so passionate about sports photography.</p>
           <p className="mb-6 text-md md:text-xl text-black md:leading-relaxed">Whether we're creating personal athlete content, promoting your next sports event, or capturing high-intensity moments, we focus on clean visuals, strong storytelling, and shooting with purpose. For us, it's not just about taking photos; it's about delivering images and media that athletes, teams, and creatives are proud to share.</p>
@@ -98,6 +75,9 @@ export default function Home() {
               <p className="italic text-2xl leading-none -mt-3 md:-mt-8 font-anonymouspro" style={{ textShadow: "0px 2px 8px #000000" }}>click here</p>
           </div>
         </TransitionLink>
+      </div>
+      <div className="px-12 md:px-52 mt-16 md:mt-36">
+        <BeholdWidget feedId="rdtdsHThyYufM7k0s3R6"/>
       </div>
       <div className="bg-gradient-to-b from-white to-neutral-950 h-20 md:h-40"/>
       <div className="text-center bg-neutral-950 text-white py-16 md:py-52 relative h-fit w-full font-anonymouspro flex flex-col items-center justify-center md:justify-normal gap-2 flex-wrap">
