@@ -45,14 +45,14 @@ export default function ProjectsClient() {
     filtersByCategory[filter.type].push(filter.key.toLowerCase());
   }
 
-  // A list of projects filtered based on selectedFilters
+  // A list of projects filtered based on selectedFilters and sorted by endDate (or startDate if endDate is not available) in descending order
   const projectList = projects
   .filter(project => {
     return Object.entries(filtersByCategory).every(([category, names]) => {
       return project.tags.some(tag => names.includes(tag));
     });
   })
-  .sort((a, b) => (b.startDate ?? "").localeCompare(a.startDate ?? ""))
+  .sort((a, b) => (b.endDate ?? b.startDate ?? "").localeCompare(a.endDate ?? a.startDate ?? ""))
 
   const toggleChecked = (filter: Filter) => {
     const filterName = (filter.key).toLowerCase();

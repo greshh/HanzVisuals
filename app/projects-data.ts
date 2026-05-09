@@ -169,6 +169,7 @@ export const projects: Project[] = [
     "name": "Senior Prems 2026 Photos",
     "key": "senior-prems-26",
     "startDate": "2026-05-01",
+    "endDate": "2026-05-08",
     "tags": ["photos", "basketball"],
     "link": "/projects/senior-prems-26"
   },

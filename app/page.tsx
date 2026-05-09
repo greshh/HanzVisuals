@@ -76,7 +76,7 @@ export default function Home() {
           </div>
         </TransitionLink>
       </div>
-      <div className="px-12 md:px-52 mt-16 md:mt-36">
+      <div className="px-5 md:px-52 mt-16 md:mt-36 mb-5 md:mb-0">
         <BeholdWidget feedId="rdtdsHThyYufM7k0s3R6"/>
       </div>
       <div className="bg-gradient-to-b from-white to-neutral-950 h-20 md:h-40"/>
