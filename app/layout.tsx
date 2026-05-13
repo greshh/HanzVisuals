@@ -5,8 +5,8 @@ import Navbar from "./navbar";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Hanz Visuals",
-  description: "A visual portfolio",
+  title: "Hanz Visuals | New Zealand Sports Photography & Videography",
+  description: "A New Zealand sports photography and videography brand creating basketball, volleyball, and athlete content through clean visuals and storytelling.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

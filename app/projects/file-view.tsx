@@ -2,6 +2,8 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 
+// NOTE: This component only works for graphics in the "graphics" folder.
+
 export default function FileView({ name, type, setCurrentFile }: { name: string; type: string; setCurrentFile: (file: string) => void; }) {
   const [isLandscape, setIsLandscape] = useState(true);
   
@@ -19,14 +21,14 @@ export default function FileView({ name, type, setCurrentFile }: { name: string;
         <div className="flex flex-row gap-2 p-10 w-full h-full">
           {(type == "png" || type == "jpg") && <div className="relative w-[90vw] h-[90vh]">
             <Image
-              src={`/projects/${name}`}
+              src={`/projects/graphics/${name}`}
               alt={name}
               fill
               quality={100}
               className="object-contain"
             />
           </div>}
-          {type == "mp4" && <video
+          {/* {type == "mp4" && <video
             src={`/projects/${name}`}
             controls
             autoPlay
@@ -34,7 +36,7 @@ export default function FileView({ name, type, setCurrentFile }: { name: string;
             height={400}
             className={`${isLandscape ? "h-[90vh]" : "w-[90vw]"} object-contain cursor-default`}
             // onClick={(e) => e.stopPropagation()}
-          />}
+          />} */}
           <img 
             src="/projects/close-file.svg" 
             className="w-10 h-10 lg:w-8 lg:h-8 cursor-pointer" 
