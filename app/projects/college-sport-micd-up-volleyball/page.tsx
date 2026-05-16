@@ -14,7 +14,11 @@ export default function Micd_Up() {
         <h1 className="font-phonk text-4xl md:text-5xl text-white text-center tracking-wider">{("Micd Up").toUpperCase()}</h1>
         <div className="w-fit">
           <div className="flex flex-wrap gap-5 lg:gap-9 xl:gap-9 font-anonymouspro">
-            {micdUpProjects.map(p => (
+            {micdUpProjects.map(p => {
+              const [startYear, startMonth, startDay] = p.date.split("-");
+              let date = `${startDay}/${startMonth}/${startYear}`;
+
+              return (
               <a
                 href={p.link}
                 target="_blank"
@@ -37,11 +41,11 @@ export default function Micd_Up() {
                   />
                   <div className="bg-gradient-to-t from-neutral-300 to-[#e5e5e5e1] w-full md:w-60 h-28 md:h-fit p-4 opacity-100 md:opacity-0 md:group-hover:opacity-100 md:transition-opacity md:duration-500 z-10 flex flex-col justify-center items-end">
                     <p className="text-black leading-none font-phonk text-2xl text-ellipsis">{p.name.toUpperCase()}</p>
-                    <p className="text-black text-base font-semibold">{p.date}</p>
+                    <p className="text-black text-base font-semibold">{date}</p>
                   </div>
                 </div>
               </a>
-            ))}
+            )})}
           </div>
         </div>
       </div>
