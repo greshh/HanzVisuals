@@ -1,10 +1,4 @@
-export interface Project {
-  name: string;
-  key: string;
-  date?: string;
-  // tags: string[];
-  link?: string;
-}
+import { Project } from "../projects"
 
 export const micdUpProjects: Project[] = [
   {

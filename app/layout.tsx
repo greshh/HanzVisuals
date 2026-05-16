@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import Script from "next/script";
 import Navbar from "./navbar";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Hanz Visuals | New Zealand Sports Photography & Videography",
-  description: "A New Zealand sports photography and videography brand creating basketball, volleyball, and athlete content through clean visuals and storytelling.",
+  title: "Hanz Visuals | Auckland Sports Photography & Videography",
+  description: "An Auckland sports photography and videography brand creating basketball, volleyball, and athlete content through clean visuals and storytelling.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -37,6 +38,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           `}
         </Script>
         <Analytics/>
+        <SpeedInsights/>
       </head>
       <body>
         <Navbar/>

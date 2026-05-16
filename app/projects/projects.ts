@@ -1,11 +1,53 @@
+import { micdUpProjects } from "./college-sport-micd-up-volleyball/projects";
+import { seniorPrems2026Projects } from "./college-sport-senior-premier-basketball-2026/projects";
+
 export interface Project {
-  name: string;
-  key: string;
+  name?: string;
+  key?: string;
+  round?: number;
+  venue?: string;
   startDate?: string;
   endDate?: string;
-  tags: string[];
+  date?: string;
+  tags?: string[];
   link?: string;
   file?: string;
+}
+
+const formatDate = (date: Date) => {
+  const day = date.getDate().toString().padStart(2, "0");
+  const month = (date.getMonth() + 1).toString().padStart(2, "0");
+  const year = date.getFullYear();
+  return `${year}-${month}-${day}`;
+}
+
+export const calculateDates = (projects: Project[]) => {
+  if (!projects || projects.length === 0) {
+    return { startDate: null as string | null, endDate: null as string | null };
+  }
+  
+  let minDate: string;
+  let maxDate: string;
+
+  if (projects[0].startDate) {
+    minDate = projects[0].startDate;
+    maxDate = projects[0].endDate;
+
+    projects.forEach(p => {
+      if (p.startDate < minDate) minDate = p.startDate;
+      if (p.endDate > maxDate) maxDate = p.endDate;
+    });
+  } else if (projects[0].date) {
+    minDate = projects[0].date;
+    maxDate = projects[0].date;
+
+    projects.forEach(p => {
+      if (p.date < minDate) minDate = p.date;
+      if (p.date > maxDate) maxDate = p.date;
+    });
+  }
+
+  return { startDate: formatDate(new Date(minDate)), endDate: formatDate(new Date(maxDate)) };
 }
 
 export const projects: Project[] = [
@@ -127,16 +169,16 @@ export const projects: Project[] = [
   {
     "name": "Micd Up",
     "key": "college-sport-micd-up-volleyball",
-    "startDate": "2026-02-20",
-    "endDate": "2026-03-26",
+    "startDate": calculateDates(micdUpProjects).startDate,
+    "endDate": calculateDates(micdUpProjects).endDate,
     "tags": ["videos", "volleyball"],
     "link": "/projects/college-sport-micd-up-volleyball"
   },
   {
     "name": "Senior Premier 2026",
     "key": "college-sport-senior-premier-basketball-2026",
-    "startDate": "2026-05-01",
-    "endDate": "2026-05-08",
+    "startDate": calculateDates(seniorPrems2026Projects).startDate,
+    "endDate": calculateDates(seniorPrems2026Projects).endDate,
     "tags": ["photos", "graphics", "basketball"],
     "link": "/projects/college-sport-senior-premier-basketball-2026"
   },

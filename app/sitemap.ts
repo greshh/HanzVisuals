@@ -11,14 +11,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
     },
     {
-      url: 'https://hanzvisuals.com/micd-up',
+      url: 'https://hanzvisuals.com/projects/college-sport-micd-up-volleyball',
       lastModified: new Date(),
     },
     {
-      url: 'https://hanzvisuals.com/senior-prems-26',
+      url: 'https://hanzvisuals.com/projects/college-sport-senior-premier-basketball-2026',
       lastModified: new Date(),
-    },{
-      url: 'https://hanzvisuals.com/unim8s-semester-2-25',
+    },
+    {
+      url: 'https://hanzvisuals.com/projects/roller-blacks',
+      lastModified: new Date(),
+    },
+    {
+      url: 'https://hanzvisuals.com/projects/unim8s-semester-2-2025',
       lastModified: new Date(),
     },
   ]

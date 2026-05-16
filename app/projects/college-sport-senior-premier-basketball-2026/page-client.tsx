@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Footer from "../../footer";
 import FileView from "../file-view";
+import { seniorPrems2026Projects } from "./projects";
 import { useEffect, useState } from "react";
 
 export default function ClientSeniorPrems2026() {
@@ -23,34 +24,24 @@ const [currentFile, setCurrentFile] = useState("");
           <br/>
           {("Basketball 2026").toUpperCase()}
         </h1>
-        <div className="flex flex-col h-fit w-full md:h-40 justify-center items-center gap-7 md:gap-10">
-          <a 
-            href="https://photos.app.goo.gl/w9q17J9M1G1EoeFW6" 
-            className="w-full h-fit md:h-20"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div className="w-full h-fit md:h-full p-3 md:p-0 bg-white flex flex-col md:flex-row items-center justify-center rounded-lg md:gap-10 hover:bg-[#bcc7f5] transition-hover duration-500">
-              <p className="text-xl text-[#1a1945] text-center font-phonk text-wrap">{("Round 1").toUpperCase()}</p>
-              <p className="text-[#1a1945] text-center font-phonk text-3xl text-wrap">{("MAGS").toUpperCase()}</p>
-              <p className="text-xl text-[#1a1945] text-center font-phonk text-wrap">{("May 1").toUpperCase()}</p>
-            </div>
-          </a>
-          <a 
-            href="https://photos.app.goo.gl/J1yfBT16cHX1sAoh7" 
-            className="w-full h-16 md:h-20"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div className="w-full h-fit md:h-full p-3 md:p-0 bg-white flex flex-col md:flex-row items-center justify-center rounded-lg md:gap-10 hover:bg-[#bcc7f5] transition-hover duration-500">
-              <p className="text-xl text-[#1a1945] text-center font-phonk text-wrap">{("Round 2").toUpperCase()}</p>
-              <p className="text-[#1a1945] text-center font-phonk text-3xl text-wrap">{("Rosmini").toUpperCase()}</p>
-              <p className="text-xl text-[#1a1945] text-center font-phonk text-wrap">{("May 8").toUpperCase()}</p>
-            </div>
-          </a>
+        <div className="flex flex-col h-fit w-full justify-center items-center gap-7 md:gap-10">
+          {seniorPrems2026Projects.map((project) => (
+            <a
+              key={project.round}
+              href={project.link}
+              className="w-full h-fit"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="w-full h-fit md:h-full p-3 bg-white flex flex-col md:flex-row items-center justify-center rounded-lg md:gap-10 hover:bg-[#bcc7f5] transition-hover duration-500">
+                <p className="text-xl text-[#1a1945] text-center font-phonk text-wrap">{`Round ${project.round}`.toUpperCase()}</p>
+                <p className="text-[#1a1945] text-center font-phonk text-3xl text-wrap">{project.venue.toUpperCase()}</p>
+                <p className="text-xl text-[#1a1945] text-center font-phonk text-wrap">{project.date.toUpperCase().toUpperCase()}</p>
+              </div>
+            </a>
+          ))}
         </div>
-
-        <div className="my-10 md:my-0">
+        <div>
           <h2 className="font-phonk text-3xl md:text-4xl text-white text-center tracking-wider my-5">{("Graphics").toUpperCase()}</h2>
           <div className="grid grid-cols-1 md:grid-cols-1 gap-4">
             {/* NOTE: When adding graphics, put them in group of fours by duplicating the outside container. */}
@@ -63,7 +54,7 @@ const [currentFile, setCurrentFile] = useState("");
                 quality={100}
                 sizes="(min-width: 768px) 240px, 100vw"
                 onClick={() => openFile("college-sport-senior-premier-basketball-2026/hunter-johns.jpg")}
-                className="z-0 h-full md:h-80 w-full drop-shadow-xl cursor-pointer hover:scale-105 hover:drop-shadow-2xl transition-all duration-500"
+                className="object-contain z-0 h-full md:h-80 w-full drop-shadow-xl cursor-pointer hover:scale-105 hover:drop-shadow-2xl transition-all duration-500"
               />
             </div>
         </div>

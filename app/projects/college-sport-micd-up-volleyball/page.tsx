@@ -10,7 +10,7 @@ export const metadata = {
 export default function Micd_Up() {
   return (
     <div className="h-fit w-full">
-      <div className="bg-neutral-950 w-full h-full flex bg-gradient-to-b from-neutral-950 to-neutral-500 py-[10vh] px-52 flex-col gap-10 items-center">
+      <div className="bg-neutral-950 w-full h-full flex bg-gradient-to-b from-neutral-950 to-neutral-500 py-[10vh] px-10 md:px-52 flex-col gap-10 items-center">
         <h1 className="font-phonk text-4xl md:text-5xl text-white text-center tracking-wider">{("Micd Up").toUpperCase()}</h1>
         <div className="w-fit">
           <div className="flex flex-wrap gap-5 lg:gap-9 xl:gap-9 font-anonymouspro">
@@ -35,7 +35,7 @@ export default function Micd_Up() {
                     sizes="(min-width: 768px) 240px, 100vw"
                     className="absolute top-0 object-cover z-0 h-full md:h-80 w-full"
                   />
-                  <div className="bg-gradient-to-t from-neutral-300 to-[#e5e5e5e1] w-full md:w-60 h-40 md:h-fit p-4 opacity-100 md:opacity-0 md:group-hover:opacity-100 md:transition-opacity md:duration-500 z-10 flex flex-col justify-center items-end">
+                  <div className="bg-gradient-to-t from-neutral-300 to-[#e5e5e5e1] w-full md:w-60 h-28 md:h-fit p-4 opacity-100 md:opacity-0 md:group-hover:opacity-100 md:transition-opacity md:duration-500 z-10 flex flex-col justify-center items-end">
                     <p className="text-black leading-none font-phonk text-2xl text-ellipsis">{p.name.toUpperCase()}</p>
                     <p className="text-black text-base font-semibold">{p.date}</p>
                   </div>
