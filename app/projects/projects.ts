@@ -12,7 +12,7 @@ export interface Project {
   tags?: string[];
   link?: string;
   file?: string;
-}
+} 
 
 const formatDate = (date: Date) => {
   const day = date.getDate().toString().padStart(2, "0");
