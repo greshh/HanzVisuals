@@ -182,4 +182,12 @@ export const projects: Project[] = [
     "tags": ["photos", "graphics", "basketball"],
     "link": "/projects/college-sport-senior-premier-basketball-2026"
   },
+  {
+    "name": "UTSNZ 3x3 National Champs",
+    "key": "utsnz-3x3-tertiary-national-championships-2026",
+    "startDate": "2026-05-16",
+    "endDate": "2026-05-17",
+    "tags": ["photos", "basketball"],
+    "link": "https://photos.google.com/u/4/album/AF1QipP4hh9wDxnywf91Y99sHSGG6GVCsKfMwTfXzcEv"
+  },
 ]
