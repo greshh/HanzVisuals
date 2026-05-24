@@ -5,7 +5,8 @@ export interface Project {
   name?: string;
   key?: string;
   round?: number;
-  venue?: string;
+  home?: string;
+  away?: string;
   startDate?: string;
   endDate?: string;
   date?: string;
@@ -189,5 +190,12 @@ export const projects: Project[] = [
     "endDate": "2026-05-17",
     "tags": ["photos", "basketball"],
     "link": "https://photos.app.goo.gl/rLNWaMtkuKs7pvYu7"
+  },
+  {
+    "name": "UNIM8S Volleyball S1 2026",
+    "key": "unim8s-volleyball-finals-semester-1-2026",
+    "startDate": "2026-05-20",
+    "tags": ["photos", "volleyball"],
+    "link": "https://photos.app.goo.gl/BmappefcQaYN6j5D8"
   },
 ]
