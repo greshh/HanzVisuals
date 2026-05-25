@@ -199,8 +199,8 @@ export const projects: Project[] = [
     "link": "https://photos.app.goo.gl/BmappefcQaYN6j5D8"
   },
   {
-    "name": "UNIM8S Basketball A&B S1 2026",
-    "key": "unim8s-basketball-finals-A&B-semester-1-2026",
+    "name": "UNIM8S Basketball A B S1 2026",
+    "key": "unim8s-basketball-finals-a-b-semester-1-2026",
     "startDate": "2026-05-25",
     "tags": ["photos", "basketball"],
     "link": "https://photos.app.goo.gl/Zu69kEwKj3LEXnnT7"
