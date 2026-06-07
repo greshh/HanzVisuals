@@ -57,7 +57,6 @@ export default function Parallax() {
           {"This semester, I provided full photo coverage of the UNIM8S Social Leagues finals across basketball A & B grade, basketball C grade, volleyball, football, and indoor netball. The aim was to capture high-quality images for all teams and athletes, helping create lasting memories for students. Having covered the same competitions in Semester 2, 2025, this experience also highlighted how much I have developed as a photographer over the past six months. I am grateful to the UNIM8S team for the opportunity to contribute to another successful semester of university sport.".toUpperCase()}
         </p>
       </div>
-      <div className="h-10 md:h-20 w-full bg-gradient-to-b from-[#0c0d46] to-transparent z-10"/>
     </div>
   );
 }
