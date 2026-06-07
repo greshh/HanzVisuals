@@ -10,7 +10,7 @@ export default function UNIM8S_Semester_2_2025() {
   return (
     <div className="h-fit w-full">
       <div className="bg-neutral-950 w-full h-full flex bg-gradient-to-b from-[#1a1945] to-[#5f5cc4] py-[10vh] px-52 flex-col gap-10 items-center">
-        <Image src="/projects/unim8s/uoa-rec-logo.jpg" alt="University of Auckland Recreation Centre logo" width={96} height={96} className="rounded-[50%]"/>
+        <Image src="/projects/unim8s-semester-2-2025/uoa-rec-logo.jpg" alt="University of Auckland Recreation Centre logo" width={96} height={96} className="rounded-[50%]"/>
         <h1 className="font-phonk text-3xl md:text-4xl text-white text-center tracking-wider">{("UNIM8S Semester 2 2025").toUpperCase()}</h1>
         <a 
           href="https://photos.app.goo.gl/FWGhj1QLwv5deRre8" 

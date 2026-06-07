@@ -190,4 +190,16 @@ export const projects: Project[] = [
     "tags": ["photos", "basketball"],
     "link": "https://photos.google.com/u/4/album/AF1QipP4hh9wDxnywf91Y99sHSGG6GVCsKfMwTfXzcEv"
   },
+<<<<<<< Updated upstream
 ]
+=======
+  {
+    "name": "UNIM8S Semester 1 2026",
+    "key": "unim8s-semester-1-2026",
+    "startDate": "2026-05-20",
+    "endDate": "2026-05-28",
+    "tags": ["photos", "basketball", "volleyball", "other"],
+    "link": "/projects/unim8s-semester-1-2026"
+  },
+]
+>>>>>>> Stashed changes
