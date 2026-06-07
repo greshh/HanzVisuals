@@ -39,12 +39,6 @@ const [currentFile, setCurrentFile] = useState("");
               target="_blank"
               rel="noopener noreferrer"
             >
-<<<<<<< Updated upstream
-              <div className="w-full h-fit md:h-full p-3 bg-white flex flex-col md:flex-row items-center justify-center rounded-lg md:gap-10 hover:bg-[#bcc7f5] transition-hover duration-500">
-                <p className="text-xl text-[#1a1945] text-center font-phonk text-wrap">{`Round ${project.round}`.toUpperCase()}</p>
-                <p className="text-[#1a1945] text-center font-phonk text-3xl text-wrap">{project.venue.toUpperCase()}</p>
-                <p className="text-xl text-[#1a1945] text-center font-phonk text-wrap">{new Date(project.date).toLocaleDateString("en-US", {
-=======
               <div className="w-full h-fit md:h-full p-3 bg-white flex flex-col md:flex-row items-center justify-center rounded-lg md:gap-10 hover:bg-[#B7D7F3] transition-hover duration-500">
                 <p className="text-xl text-[#0f1760] text-center font-phonk text-wrap">{`Round ${project.round}`.toUpperCase()}</p>
                 <div className="flex flex-row gap-3 items-center justify-center">
@@ -53,7 +47,6 @@ const [currentFile, setCurrentFile] = useState("");
                   <p className="hidden md:inline text-[#0f1760] text-center font-phonk text-3xl text-wrap">{project.away?.toUpperCase()}</p>
                 </div>
                 <p className="text-xl text-[#0f1760] text-center font-phonk text-wrap">{new Date(project.date).toLocaleDateString("en-US", {
->>>>>>> Stashed changes
                   month: "long",
                   day: "numeric",
                 }).toUpperCase()}</p>
