@@ -49,22 +49,22 @@ export default function Spotify({ colour, projectKey, link }: { colour: string, 
 
       {/* MOBILE VERSION */}
       <div
-        className="block md:hidden h-screen z-40" onClick={toggleOpen}
+        className="block md:hidden h-screen w-screen z-40" onClick={toggleOpen}
       >
-        <div className={`fixed -bottom-[352px] left-0 w-screen flex justify-center z-50 ${isOpen ? "-translate-y-[100%]" : "translate-y-0"} transition-transform duration-300`}>
-          <div className="relative flex flex-col items-center">
+        <div className={`fixed -bottom-[352px] left-0 w-screen flex justify-center z-50 ${isOpen ? "-translate-y-[85%]" : "translate-y-0"} transition-transform duration-300`}>
+          <div className="relative flex flex-col items-end w-screen">
             <Image
               src={`/projects/vinyls/${projectKey}.png`}
               alt="Vinyl"
               width={100}
               height={100}
-              className="w-32 h-32 cursor-pointer animate-[spin_10s_linear_infinite] drop-shadow-[0_0_15px_rgba(0,0,0,0.5)] z-10"
+              className="w-28 h-28 mr-2 cursor-pointer animate-[spin_10s_linear_infinite] drop-shadow-[0_0_15px_rgba(0,0,0,0.5)] z-10"
               onClick={toggleOpen}
             />
-            <div className="flex flex-row w-fit h-fit -mt-16 z-50 drop-shadow-[0_0_10px_rgba(0,0,0,0.5)]">
+            <div className="flex flex-row w-fit h-fit -mt-14 z-50 drop-shadow-[0_0_10px_rgba(0,0,0,0.5)]">
               <iframe
                 data-testid="embed-iframe"
-                className="-mx-5"
+                className="w-screen"
                 src={link}
                 width="280"
                 height="352"
