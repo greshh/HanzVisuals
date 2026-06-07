@@ -189,7 +189,7 @@ export const projects: Project[] = [
     "startDate": "2026-05-16",
     "endDate": "2026-05-17",
     "tags": ["photos", "basketball"],
-    "link": "https://photos.google.com/u/4/album/AF1QipP4hh9wDxnywf91Y99sHSGG6GVCsKfMwTfXzcEv"
+    "link": "https://photos.app.goo.gl/rLNWaMtkuKs7pvYu7"
   },
   {
     "name": "UNIM8S Semester 1 2026",

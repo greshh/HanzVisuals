@@ -39,14 +39,14 @@ const [currentFile, setCurrentFile] = useState("");
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div className="w-full h-fit md:h-full p-3 bg-white flex flex-col md:flex-row items-center justify-center rounded-lg md:gap-10 hover:bg-[#B7D7F3] transition-hover duration-500">
-                <p className="text-xl text-[#0f1760] text-center font-phonk text-wrap">{`Round ${project.round}`.toUpperCase()}</p>
+              <div className="w-full h-fit md:h-full p-3 bg-white flex flex-col md:flex-row items-center justify-center rounded-lg md:gap-10 hover:bg-[#bcc7f5] transition-hover duration-500">
+                <p className="text-xl text-[#1a1945] text-center font-phonk text-wrap">{`Round ${project.round}`.toUpperCase()}</p>
                 <div className="flex flex-row gap-3 items-center justify-center">
-                  <p className="text-[#0f1760] text-center font-phonk text-3xl text-wrap">{project.home.toUpperCase()}</p>
-                  {project.away && <p className="hidden md:inline text-lg text-[#0f1760] text-center font-phonk text-wrap">VS</p>}
-                  <p className="hidden md:inline text-[#0f1760] text-center font-phonk text-3xl text-wrap">{project.away?.toUpperCase()}</p>
+                  <p className="text-[#1a1945] text-center font-phonk text-3xl text-wrap">{project.home.toUpperCase()}</p>
+                  {project.away && <p className="hidden md:inline text-lg text-[#1a1945] text-center font-phonk text-wrap">VS</p>}
+                  <p className="hidden md:inline text-[#1a1945] text-center font-phonk text-3xl text-wrap">{project.away?.toUpperCase()}</p>
                 </div>
-                <p className="text-xl text-[#0f1760] text-center font-phonk text-wrap">{new Date(project.date).toLocaleDateString("en-US", {
+                <p className="text-xl text-[#1a1945] text-center font-phonk text-wrap">{new Date(project.date).toLocaleDateString("en-US", {
                   month: "long",
                   day: "numeric",
                 }).toUpperCase()}</p>

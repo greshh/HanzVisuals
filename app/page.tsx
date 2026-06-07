@@ -14,7 +14,8 @@ export default function Home() {
     { image: "/home/carousel/2.jpg" }, 
     { image: "/home/carousel/3.jpg" },
     { image: "/home/carousel/4.jpg" },
-    { image: "/home/carousel/5.jpg" }];
+    { image: "/home/carousel/5.jpg" },
+    { image: "/home/carousel/6.jpg" }];
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
