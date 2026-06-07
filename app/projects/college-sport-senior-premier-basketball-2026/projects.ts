@@ -28,5 +28,12 @@ export const seniorPrems2026Projects: Project[] = [
     "away": "AGS",
     "date": "2026-05-22",
     "link": "https://photos.app.goo.gl/oRPaFHGTjsZfAT7d9"
-  }
+  },
+  {
+    "round": 6,
+    "home": "Rosmini",
+    "away": "St Kentigern",
+    "date": "2026-06-05",
+    "link": "https://photos.app.goo.gl/Cq99r6HgirmykE517"
+  },
 ]

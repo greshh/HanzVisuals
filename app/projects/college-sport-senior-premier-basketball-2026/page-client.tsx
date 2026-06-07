@@ -4,6 +4,8 @@ import Footer from "../../footer";
 import FileView from "../file-view";
 import { seniorPrems2026Projects } from "./projects";
 import { useEffect, useState } from "react";
+import Parallax from "./parallax";
+import Spotify from "../spotify";
 
 export default function ClientSeniorPrems2026() {
 const [currentFile, setCurrentFile] = useState("");
@@ -16,13 +18,17 @@ const [currentFile, setCurrentFile] = useState("");
   },[currentFile])
 
   return (
-    <div className="h-full w-full">
+    <div className="h-full w-full relative">
       {currentFile != "" && <FileView name={currentFile} type={currentFile.slice(-3)} setCurrentFile={setCurrentFile}/>}
-      <div className="bg-neutral-950 w-full min-h-[100vh] h-full flex bg-gradient-to-b from-[#2f51cc] to-[#0d1663] px-10 md:px-52 flex-col gap-10 items-center justify-center py-10 md:py-20">
-        <h1 className="font-phonk text-3xl md:text-5xl text-white text-center tracking-wider">
-          {("Senior Premier").toUpperCase()}
-          <br/>
-          {("Basketball 2026").toUpperCase()}
+      <Spotify 
+        colour="1f1f1f" 
+        projectKey="college-sport-senior-premier-basketball-2026"
+        link="https://open.spotify.com/embed/track/1AFKbnV49aMFAzZouEaMEP?utm_source=generator&theme=0&autoplay=1"
+      />
+      <Parallax />
+      <div className="relative w-full min-h-[100vh] h-full flex bg-gradient-to-b from-[#0166b4] to-[#01487E] px-10 md:px-52 flex-col gap-10 items-center justify-center py-10 md:pb-20 md:pt-0 z-30">
+        <h1 className="font-humane text-6xl md:text-8xl font-semibold text-white text-center tracking-wider">
+          {("Senior Premier Basketball 2026").toUpperCase()}
         </h1>
         <div className="flex flex-col h-fit w-full justify-center items-center gap-7 md:gap-10">
           {seniorPrems2026Projects.map((project) => (

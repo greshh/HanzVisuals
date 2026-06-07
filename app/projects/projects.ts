@@ -192,24 +192,11 @@ export const projects: Project[] = [
     "link": "https://photos.app.goo.gl/rLNWaMtkuKs7pvYu7"
   },
   {
-    "name": "UNIM8S Volleyball S1 2026",
-    "key": "unim8s-volleyball-finals-semester-1-2026",
+    "name": "UNIM8S Semester 1 2026",
+    "key": "unim8s-semester-1-2026",
     "startDate": "2026-05-20",
-    "tags": ["photos", "volleyball"],
-    "link": "https://photos.app.goo.gl/BmappefcQaYN6j5D8"
-  },
-  {
-    "name": "UNIM8S Basketball A B Grade S1 2026",
-    "key": "unim8s-basketball-finals-a-b-semester-1-2026",
-    "startDate": "2026-05-25",
-    "tags": ["photos", "basketball"],
-    "link": "https://photos.app.goo.gl/Zu69kEwKj3LEXnnT7"
-  },
-  {
-    "name": "UNIM8S Basketball C Grade S1 2026",
-    "key": "unim8s-basketball-finals-c-semester-1-2026",
-    "startDate": "2026-05-26",
-    "tags": ["photos", "basketball"],
-    "link": "https://photos.app.goo.gl/DT1TTU2kSaXtJhpa7"
+    "endDate": "2026-05-28",
+    "tags": ["photos", "basketball", "volleyball", "other"],
+    "link": "/projects/unim8s-semester-1-2026"
   },
 ]
