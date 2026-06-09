@@ -13,7 +13,7 @@ export default function Spotify({ colour, projectKey, link }: { colour: string, 
   },[])
 
   return (
-    <div className="absolute top-0 w-screen h-[90vh]">
+    <div className="absolute top-0 w-full h-[90vh]">
       {/* DESKTOP VERSION */}
       <div className="hidden md:block">
         <div className={`fixed top-[14vh] md:left-4 z-40 flex flex-row w-fit pl-1`}>
@@ -49,7 +49,7 @@ export default function Spotify({ colour, projectKey, link }: { colour: string, 
 
       {/* MOBILE VERSION */}
       <div
-        className="block md:hidden h-screen w-screen z-40" onClick={toggleOpen}
+        className="block md:hidden h-screen w-screen z-40"
       >
         <div className={`fixed -bottom-[352px] left-0 w-screen flex justify-center z-50 ${isOpen ? "-translate-y-[85%]" : "translate-y-0"} transition-transform duration-300`}>
           <div className="relative flex flex-col items-end w-screen">

@@ -11,11 +11,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
     },
     {
-      url: 'https://hanzvisuals.com/projects/college-sport-micd-up-volleyball',
+      url: 'https://hanzvisuals.com/projects/unim8s-semester-2-2025',
       lastModified: new Date(),
     },
     {
-      url: 'https://hanzvisuals.com/projects/college-sport-senior-premier-basketball-2026',
+      url: 'https://hanzvisuals.com/projects/college-sport-micd-up-volleyball',
       lastModified: new Date(),
     },
     {
@@ -23,7 +23,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
     },
     {
-      url: 'https://hanzvisuals.com/projects/unim8s-semester-2-2025',
+      url: 'https://hanzvisuals.com/projects/college-sport-senior-premier-basketball-2026',
+      lastModified: new Date(),
+    },
+    {
+      url: 'https://hanzvisuals.com/projects/unim8s-semester-1-2026',
       lastModified: new Date(),
     },
   ]

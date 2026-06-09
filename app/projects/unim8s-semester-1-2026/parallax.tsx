@@ -26,13 +26,13 @@ export default function Parallax() {
   }, []);
 
   return (
-    <div className="relative h-fit w-screen">
-      <div ref={bgRef} className="absolute inset-0 z-0 w-screen h-[20rem] md:h-[32rem]">
+    <div className="relative h-fit w-full">
+      <div ref={bgRef} className="absolute inset-0 z-0 w-full h-[20rem] md:h-[32rem]">
         <Image 
           src="/projects/unim8s-semester-1-2026/parallax-background.jpg" 
           alt="Background" 
           fill 
-          className="object-cover object-bottom w-screen"
+          className="object-cover object-bottom w-full"
         />
       </div>
       <div className="h-36 md:h-60"/>
@@ -42,7 +42,7 @@ export default function Parallax() {
           alt="Foreground" 
           width={5000} 
           height={5000} 
-          className="w-screen h-auto"
+          className="w-full h-auto"
         />
       </div>
       <div className="relative bg-[#0c0d46] flex flex-col gap-2 md:gap-5 items-center pt-5 md:pt-0 px-6 md:px-24 text-white text-center font-humane text-4xl md:text-6xl tracking-wide z-10 pb-5">

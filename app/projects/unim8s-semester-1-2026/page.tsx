@@ -10,14 +10,14 @@ export const metadata = {
 
 export default function UNIM8S_Semester_1_2026() {
   return (
-    <div className="relative h-fit w-screen">
+    <div className="relative h-fit w-full">
       <Spotify 
         colour="1f1f1f" 
         projectKey="unim8s-semester-1-2026"
         link="https://open.spotify.com/embed/track/1fI2fpUb0zLuMPwEzIuoOr?utm_source=generator&theme=0&autoplay=1"
       />
       <Parallax />
-      <div className="bg-gradient-to-b from-[#0c0d46] to-[#0a0b40] w-screen h-full flex pb-[10vh] pt-5 px-6 md:px-52 flex-col gap-10 items-center z-30">
+      <div className="bg-gradient-to-b from-[#0c0d46] to-[#0a0b40] w-full h-full flex pb-[10vh] pt-5 px-6 md:px-52 flex-col gap-10 items-center z-30">
         <a 
           href="https://photos.app.goo.gl/Zu69kEwKj3LEXnnT7" 
           className="w-full h-16 md:h-20"
