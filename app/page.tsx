@@ -69,7 +69,14 @@ export default function Home() {
       </div>
       <div className="bg-black w-full aspect-[2/1] md:aspect-[4/1] my-10 md:my-20 relative">
         <TransitionLink href="/projects" className="group text-center text-white flex flex-col items-center justify-center h-full"> 
-          <video src="/home/projects-sequence.mp4" autoPlay loop muted className="absolute w-full h-full object-cover"/>
+          <video 
+            src="/home/projects-sequence.mp4" 
+            autoPlay 
+            loop 
+            muted 
+            playsInline
+            className="absolute w-full h-full object-cover"
+          />
           <div className="absolute z-10 w-full h-full backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500"/>
           <div className="absolute z-20 w-full h-full flex flex-col items-center justify-center">
               <h2 className="font-humane text-[30vw] md:text-[20vw] tracking-wider font-semibold leading-none" style={{ textShadow: "0px 5px 10px #000000" }}>PROJECTS</h2>
