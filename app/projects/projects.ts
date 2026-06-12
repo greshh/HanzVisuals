@@ -176,7 +176,7 @@ export const projects: Project[] = [
     "link": "/projects/college-sport-micd-up-volleyball"
   },
   {
-    "name": "Senior Premier 2026",
+    "name": "Senior Premier Season 2026",
     "key": "college-sport-senior-premier-basketball-2026",
     "startDate": calculateDates(seniorPrems2026Projects).startDate,
     "endDate": calculateDates(seniorPrems2026Projects).endDate,
