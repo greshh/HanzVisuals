@@ -56,23 +56,22 @@ const [currentFile, setCurrentFile] = useState("");
             </a>
           ))}
         </div>
-        <div>
+        <div className="w-full">
           <h2 className="font-phonk text-3xl md:text-4xl text-white text-center tracking-wider my-5">{("Graphics").toUpperCase()}</h2>
-          <div className="grid grid-cols-2 md:grid-cols-2 gap-6">
-            {/* NOTE: When adding graphics, put them in group of fours by duplicating the outside container. */}
-            <div className="grid gap-1 w-fit mx-auto">
-                <Image 
-                  src={`/projects/graphics/college-sport-senior-premier-basketball-2026/hunter-johns.jpg`}
-                  alt={"Hunter Johns from Rosmini College. Round 1 vs Mount Albert Grammar School. Senior Premier Basketball 2026"}
-                  width={240}
-                  height={320}
-                  quality={100}
-                  sizes="(min-width: 768px) 240px, 100vw"
-                  onClick={() => openFile("college-sport-senior-premier-basketball-2026/hunter-johns.jpg")}
-                  className="object-contain z-0 h-full md:h-80 w-full drop-shadow-xl cursor-pointer hover:scale-105 hover:drop-shadow-2xl transition-all duration-500"
-                />
-            </div>
-            <div className="grid gap-1 w-fit mx-auto">
+          {/* <div className="grid grid-cols-2 md:grid-cols-2 gap-6"> */}
+          <div className="flex flex-row w-full flex-wrap pl-3 md:pl-0 gap-4 md:gap-6 md:justify-center">
+            {/* NOTE: (NOT APPLICABLE WITH FLEXBOX, ONLY GRID) When adding graphics, put them in group of fours by duplicating the outside container. */}
+            {/* <div className="grid gap-1 w-fit mx-auto"> */}
+              <Image 
+                src={`/projects/graphics/college-sport-senior-premier-basketball-2026/hunter-johns.jpg`}
+                alt={"Hunter Johns from Rosmini College. Round 1 vs Mount Albert Grammar School. Senior Premier Basketball 2026"}
+                width={240}
+                height={320}
+                quality={100}
+                sizes="(min-width: 768px) 240px, 100vw"
+                onClick={() => openFile("college-sport-senior-premier-basketball-2026/hunter-johns.jpg")}
+                className="object-contain z-0 h-full md:h-80 w-[45%] md:w-fit drop-shadow-xl cursor-pointer hover:scale-105 hover:drop-shadow-2xl transition-all duration-500"
+              />
               <Image 
                 src={`/projects/graphics/college-sport-senior-premier-basketball-2026/dangerous-duo.jpg`}
                 alt={"Cooper Lepou (41 points, 8 threes, 6 assists) and Hunter Johns (33 points, 16 rebounds) from Rosmini College. Round 3 vs Sacred Heart College. Senior Premier Basketball 2026"}
@@ -81,12 +80,23 @@ const [currentFile, setCurrentFile] = useState("");
                 quality={100}
                 sizes="(min-width: 768px) 240px, 100vw"
                 onClick={() => openFile("college-sport-senior-premier-basketball-2026/dangerous-duo.jpg")}
-                className="object-contain z-0 h-full md:h-80 w-full drop-shadow-xl cursor-pointer hover:scale-105 hover:drop-shadow-2xl transition-all duration-500"
+                className="object-contain z-0 h-full md:h-80 w-[45%] md:w-fit drop-shadow-xl cursor-pointer hover:scale-105 hover:drop-shadow-2xl transition-all duration-500"
               />
-            </div>
+            {/* </div> */}
+            {/* <div className="grid gap-1 w-fit mx-auto"> */}
+              <Image 
+                src={`/projects/graphics/college-sport-senior-premier-basketball-2026/hes-cooking.jpg`}
+                alt={"\"He's Cooking\": Cooper Lepou (35 points, 11 rebounds, 8 threes) from Rosmini College. Round 7 vs Dilworth College. Senior Premier Basketball 2026"}
+                width={240}
+                height={320}
+                quality={100}
+                sizes="(min-width: 768px) 240px, 100vw"
+                onClick={() => openFile("college-sport-senior-premier-basketball-2026/hes-cooking.jpg")}
+                className="object-contain z-0 h-full md:h-80 w-[45%] md:w-fit drop-shadow-xl cursor-pointer hover:scale-105 hover:drop-shadow-2xl transition-all duration-500"
+              />
+            {/* </div> */}
+          </div>
         </div>
-      </div>
-
       </div>
       <Footer/>
     </div>
