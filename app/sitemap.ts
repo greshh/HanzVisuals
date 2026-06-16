@@ -30,5 +30,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: 'https://hanzvisuals.com/projects/unim8s-semester-1-2026',
       lastModified: new Date(),
     },
+    {
+      url: 'https://hanzvisuals.com/projects/utsnz-3x3-basketball-tertiary-national-championships-2026',
+      lastModified: new Date(),
+    },
   ]
 }

@@ -176,7 +176,7 @@ export const projects: Project[] = [
     "link": "/projects/college-sport-micd-up-volleyball"
   },
   {
-    "name": "Senior Premier Season 2026",
+    "name": "Senior Premier Szn 2026",
     "key": "college-sport-senior-premier-basketball-2026",
     "startDate": calculateDates(seniorPrems2026Projects).startDate,
     "endDate": calculateDates(seniorPrems2026Projects).endDate,
@@ -185,11 +185,11 @@ export const projects: Project[] = [
   },
   {
     "name": "UTSNZ 3x3 National Champs",
-    "key": "utsnz-3x3-tertiary-national-championships-2026",
+    "key": "utsnz-3x3-basketball-tertiary-national-championships-2026",
     "startDate": "2026-05-16",
     "endDate": "2026-05-17",
     "tags": ["photos", "basketball"],
-    "link": "https://photos.app.goo.gl/rLNWaMtkuKs7pvYu7"
+    "link": "/projects/utsnz-3x3-basketball-tertiary-national-championships-2026"
   },
   {
     "name": "UNIM8S Semester 1 2026",
