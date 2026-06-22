@@ -95,6 +95,16 @@ const [currentFile, setCurrentFile] = useState("");
                 className="object-contain z-0 h-full md:h-80 w-[45%] md:w-fit drop-shadow-xl cursor-pointer hover:scale-105 hover:drop-shadow-2xl transition-all duration-500"
               />
             {/* </div> */}
+            <Image 
+              src={`/projects/graphics/college-sport-senior-premier-basketball-2026/everyone-showed-up.jpg`}
+              alt={"\"Everyone Showed Up\": Cooper Lepou (18 points), Miggy Piezas (19 points), Will Thornley (23 points) from Rosmini College. Round 8 vs MAGS. Senior Premier Basketball 2026"}
+              width={240}
+              height={320}
+              quality={100}
+              sizes="(min-width: 768px) 240px, 100vw"
+              onClick={() => openFile("college-sport-senior-premier-basketball-2026/everyone-showed-up.jpg")}
+              className="object-contain z-0 h-full md:h-80 w-[45%] md:w-fit drop-shadow-xl cursor-pointer hover:scale-105 hover:drop-shadow-2xl transition-all duration-500"
+            />
           </div>
         </div>
       </div>

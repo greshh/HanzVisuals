@@ -124,7 +124,7 @@ export default function Parallax() {
             alt="Hanz Visuals with @in.sh0tt and @shuddho_huq" 
             width={1000} 
             height={1000} 
-            className="h-40 md:h-96 w-fit rounded-lg shadow-2xl" 
+            className="h-40 md:h-96 w-auto rounded-lg shadow-2xl" 
           />
         </div>
       </div>
