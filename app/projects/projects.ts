@@ -199,4 +199,11 @@ export const projects: Project[] = [
     "tags": ["photos", "basketball", "volleyball", "other"],
     "link": "/projects/unim8s-semester-1-2026"
   },
+  {
+    "name": "Gilas Pilipinas vs Franklin Bulls",
+    "key": "gilas-pilipinas-vs-franklin-bulls",
+    "startDate": "2026-06-30",
+    "tags": ["photos", "basketball"],
+    "link": "https://photos.app.goo.gl/sXdLJ8B9Mn2v9LV68"
+  },
 ]
