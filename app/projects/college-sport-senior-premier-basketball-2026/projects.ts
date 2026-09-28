@@ -107,7 +107,7 @@ export const seniorPrems2026Projects: Project[] = [
     "link": "https://photos.app.goo.gl/qZxpBWypQDj2vpGz8"
   },
   {
-    "round": "Finasl",
+    "round": "Finals",
     "home": "Westlake",
     "away": "AGS",
     "date": "2026-08-27  ",
