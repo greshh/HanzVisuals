@@ -199,4 +199,29 @@ export const projects: Project[] = [
     "tags": ["photos", "basketball", "volleyball", "other"],
     "link": "/projects/unim8s-semester-1-2026"
   },
+<<<<<<< Updated upstream
+=======
+  {
+    "name": "Gilas Pilipinas vs Franklin Bulls",
+    "key": "gilas-pilipinas-vs-franklin-bulls",
+    "startDate": "2026-06-30",
+    "tags": ["photos", "basketball"],
+    "link": "https://photos.app.goo.gl/sXdLJ8B9Mn2v9LV68"
+  },
+  {
+    "name": "U18s Nationals",
+    "key": "18sNationals-471",
+    "startDate": "2026-07-08",
+    "endDate": "2026-07-11",
+    "tags": ["photos", "basketball"],
+    "link": "https://photos.app.goo.gl/8KjXGDimUFm8rVRE7"
+  },
+  {
+    "name": "UNIM8S Semester 2 2026",
+    "key": "unim8s-semester-2-2026",
+    "startDate": "2026-09-30",
+    "tags": ["photos", "volleyball"],
+    "link": "/projects/unim8s-semester-2-2026"
+  },
+>>>>>>> Stashed changes
 ]
