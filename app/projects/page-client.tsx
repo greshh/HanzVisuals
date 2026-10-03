@@ -85,7 +85,7 @@ export default function ProjectsClient() {
       {currentFile != "" && <FileView name={currentFile} type={currentFile.slice(-3)} setCurrentFile={setCurrentFile}/>}
       <div className="bg-white w-full z-10">
         <div className="flex bg-gradient-to-b from-neutral-950 to-neutral-500 w-full h-60 md:h-[90vh] justify-center items-center">
-          <h1 className="text-white font-humane text-9xl md:text-[200px] lg:text-[400px] font-semibold tracking-wider">{("Projects").toUpperCase()}</h1>
+          <h1 className="text-white font-humane text-[7.5rem] md:text-[200px] lg:text-[400px] font-semibold tracking-wider">{("Portfolio").toUpperCase()}</h1>
           <ScrollDown url="/projects#filter"/>
         </div>
         <div className="h-12 md:h-40 relative" id="filter">

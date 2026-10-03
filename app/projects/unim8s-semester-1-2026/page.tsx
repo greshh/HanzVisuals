@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Footer from "../../footer";
-import Parallax from "./parallax";
+import Parallax from "../parallax";
 import Spotify from "../spotify";
 
 export const metadata = {
@@ -16,66 +16,10 @@ export default function UNIM8S_Semester_1_2026() {
         projectKey="unim8s-semester-1-2026"
         link="https://open.spotify.com/embed/track/1fI2fpUb0zLuMPwEzIuoOr?utm_source=generator&theme=0&autoplay=1"
       />
-<<<<<<< Updated upstream
-      <Parallax />
-      <div className="bg-gradient-to-b from-[#0c0d46] to-[#0a0b40] w-full h-full flex pb-[10vh] pt-5 px-6 md:px-52 flex-col gap-10 items-center z-30">
-        <a 
-          href="https://photos.app.goo.gl/Zu69kEwKj3LEXnnT7" 
-          className="w-full h-16 md:h-20"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <div className="w-full h-full px-3 py-10 md:p-0 bg-white flex flex-col md:flex-row items-center justify-center rounded-lg md:gap-5 hover:bg-[#ccebf5] transition-hover duration-500">
-            <p className="text-[#1a1945] text-center font-phonk text-3xl text-wrap">{("Basketball").toUpperCase()}</p>
-            <p className="text-xl text-[#1a1945] text-center font-phonk text-wrap">{("A B Grade").toUpperCase()}</p>
-          </div>
-        </a>
-        <a 
-          href="https://photos.app.goo.gl/DT1TTU2kSaXtJhpa7" 
-          className="w-full h-20 md:h-16"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <div className="w-full h-full px-3 py-10 md:p-0 bg-white flex flex-col md:flex-row items-center justify-center rounded-lg md:gap-5 hover:bg-[#ccebf5] transition-hover duration-500">
-            <p className="text-[#1a1945] text-center font-phonk text-3xl">{("Basketball").toUpperCase()}</p>
-            <p className="text-xl text-[#1a1945] text-center font-phonk">{("C Grade").toUpperCase()}</p>
-          </div>
-        </a>
-        <a 
-          href="https://photos.app.goo.gl/FFjkMDAdPtJXBikDA" 
-          className="w-full h-16"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <div className="w-full h-full px-3 py-10 md:p-0 bg-white flex flex-row items-center justify-center rounded-lg gap-3 md:gap-5 hover:bg-[#ccebf5] transition-hover duration-500">
-            <p className="text-[#1a1945] text-center font-phonk text-3xl">{("Football").toUpperCase()}</p>
-          </div>
-        </a>
-        <a 
-          href="https://photos.app.goo.gl/PNyQJFBXNvzn8AWF6" 
-          className="w-full h-16"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <div className="w-full h-full px-3 py-10 md:p-0 bg-white flex flex-row items-center justify-center rounded-lg gap-3 md:gap-5 hover:bg-[#ccebf5] transition-hover duration-500">
-            <p className="text-[#1a1945] text-center font-phonk text-3xl">{("Indoor Netball").toUpperCase()}</p>
-          </div>
-        </a>
-        <a 
-          href="https://photos.app.goo.gl/BmappefcQaYN6j5D8" 
-          className="w-full h-16"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <div className="w-full h-full px-3 py-10 md:p-0 bg-white flex flex-row items-center justify-center rounded-lg gap-3 md:gap-5 hover:bg-[#ccebf5] transition-hover duration-500">
-            <p className="text-[#1a1945] text-center font-phonk text-3xl">{("Volleyball").toUpperCase()}</p>
-          </div>
-        </a>
-=======
       <Parallax projectKey="unim8s-semester-1-2026" />
       <div className="relative bg-[#0c0d46] flex flex-col gap-2 md:gap-5 items-center pt-5 md:pt-0 px-6 md:px-24 text-white text-center font-humane text-4xl md:text-6xl tracking-wide z-10 pb-5">
         <p className="font-bold tracking-wider leading-none mb-5">
-          {"Semester 1, 2026".toUpperCase()}
+          {"UNIM8S Social Leagues".toUpperCase()}
         </p>
         <div className="relative bg-white text-[#0c0d46] text-[4.25rem] md:text-[13rem] font-bold w-fit px-3 md:px-16 overflow-hidden mb-3">
           <p className="leading-none -tracking-tight">{"Visual Direction".toUpperCase()}</p>
@@ -141,7 +85,6 @@ export default function UNIM8S_Semester_1_2026() {
             </div>
           </a>
         </div>
->>>>>>> Stashed changes
       </div>
       <Footer/>
     </div>

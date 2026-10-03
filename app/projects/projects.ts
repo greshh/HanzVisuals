@@ -176,7 +176,7 @@ export const projects: Project[] = [
     "link": "/projects/college-sport-micd-up-volleyball"
   },
   {
-    "name": "Senior Premier 2026",
+    "name": "Senior Premier Szn 2026",
     "key": "college-sport-senior-premier-basketball-2026",
     "startDate": calculateDates(seniorPrems2026Projects).startDate,
     "endDate": calculateDates(seniorPrems2026Projects).endDate,
@@ -185,11 +185,11 @@ export const projects: Project[] = [
   },
   {
     "name": "UTSNZ 3x3 National Champs",
-    "key": "utsnz-3x3-tertiary-national-championships-2026",
+    "key": "utsnz-3x3-basketball-tertiary-national-championships-2026",
     "startDate": "2026-05-16",
     "endDate": "2026-05-17",
     "tags": ["photos", "basketball"],
-    "link": "https://photos.app.goo.gl/rLNWaMtkuKs7pvYu7"
+    "link": "/projects/utsnz-3x3-basketball-tertiary-national-championships-2026"
   },
   {
     "name": "UNIM8S Semester 1 2026",
@@ -199,8 +199,6 @@ export const projects: Project[] = [
     "tags": ["photos", "basketball", "volleyball", "other"],
     "link": "/projects/unim8s-semester-1-2026"
   },
-<<<<<<< Updated upstream
-=======
   {
     "name": "Gilas Pilipinas vs Franklin Bulls",
     "key": "gilas-pilipinas-vs-franklin-bulls",
@@ -223,5 +221,4 @@ export const projects: Project[] = [
     "tags": ["photos", "volleyball"],
     "link": "/projects/unim8s-semester-2-2026"
   },
->>>>>>> Stashed changes
 ]
